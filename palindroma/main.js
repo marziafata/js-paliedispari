@@ -15,7 +15,14 @@ function sono_palindroma (parola) {
     }
 }
 
-// // splittare le lettere e passarle in rassegna
+var risultato = sono_palindroma(parola);
+    if (risultato == true) {
+        console.log('Complimenti! Hai scritto una parola palindroma!');
+ } else {
+     console.log('Mi dispiace, ' + parola + ' non è palindroma ');
+ }
+
+
 // var lettere = parola.split('').reverse().join("");
 // // se palindroma = true
 // if (lettere === parola) {
@@ -23,14 +30,4 @@ function sono_palindroma (parola) {
 //     // altrimenti = false
 // } else {
 //     console.log(parola + ' al contrario si legge ' + lettere);
-// }
-
-
-// inserisco tutto in una funzione
-
-// se palindroma messaggio 'sei palindromo!'
-
-// function panindroma (parola) {
-//     var lettere = parola.split('').reverse().join("");
-//     console.log(lettere);
 // }
