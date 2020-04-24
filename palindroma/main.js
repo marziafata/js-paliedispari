@@ -1,9 +1,9 @@
 // palindroma: scrivere una funzione per capire se una parola è palindroma. Quindi chiedere una parola all'utente, utilizzare la funzione per sapere se la parola inserita è palindroma e stampare un messaggio appropriato
 
 // scegliere una parola
-
 var parola = prompt('scrivi una parola');
 
+// crea una funzione per scorrere le lettere e verificare l'uguaglianza in entrambi i sensi
 function sono_palindroma (parola) {
     var lettere = parola.split('').reverse().join("");
     // se palindroma = true
@@ -15,9 +15,11 @@ function sono_palindroma (parola) {
     }
 }
 
+// se la corrispondenza è vera stampa messaggio positivo
 var risultato = sono_palindroma(parola);
     if (risultato == true) {
         console.log('Complimenti! Hai scritto una parola palindroma!');
+// altrimenti messaggio negativo
  } else {
      console.log('Mi dispiace, ' + parola + ' non è palindroma ');
  }
