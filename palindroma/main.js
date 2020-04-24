@@ -19,11 +19,11 @@ function sono_palindroma (p) {
 // se la corrispondenza è vera stampa messaggio positivo
 var risultato = sono_palindroma(parola);
     if (risultato === parola) {
-        console.log('Complimenti! Hai scritto una parola palindroma!');
+    console.log('Complimenti! Hai scritto una parola palindroma!');
 // altrimenti messaggio negativo
  } else {
-     // console.log('Mi dispiace, ' + parola + ' non è palindroma ');
-     console.log(parola + ' al contrario si legge ' + risultato);
+    // console.log('Mi dispiace, ' + parola + ' non è palindroma ');
+    console.log(parola + ' al contrario si legge ' + risultato);
  }
 
 
